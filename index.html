@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Advance</title>
+    <link rel="stylesheet" href="./asset/base.css">
+    <link rel="stylesheet" href="./asset/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <form>
+        <h1>List Work</h1>
+        <div id="edit">
+            <input type="text" id="editInput">
+            <button onclick="edit()" id="clickEditButton">edit</button>
+        </div>
+        <div class="input__value">
+            <input id="input-work" type="text">
+            <button onclick="add()">Add+</button>
+        </div>
+        <ul class="list-work">
+        </ul>
+    </form>
+    <div class="model-delete">
+        <h1>Are you sure ?</h1>
+        <button onclick="deleteWork()">yes</button>
+        <button onclick="offPopUp()">no</button>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
